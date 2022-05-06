@@ -22,10 +22,10 @@ function buttonClicked() {
   const integer1 = parseInt(document.getElementById('integer1').value)
   var integer2 = parseInt(document.getElementById('integer2').value)
   var counter = 0
-  var answer = 0
+  var answer = ""
 
-  while (counter != integer2 || counter < integer2) {
-    answer + integer1
+  while (counter < integer2) {
+    answer = answer + integer1
     counter++
   }
   document.getElementById("output").innerHTML = answer
