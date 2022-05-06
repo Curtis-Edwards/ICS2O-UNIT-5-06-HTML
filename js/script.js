@@ -29,7 +29,11 @@ function buttonClicked() {
       answer = answer + integer1
       counter = counter + 1
     }
-  } 
+  } else if (integer1 < 0 && integer2 < 0)
+      while (counter > integer2) {
+        answer = answer - integer1
+        counter = counter - 1
+      }
   document.getElementById("output").innerHTML = "Your answer is: " + answer
 }
 
