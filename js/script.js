@@ -19,7 +19,7 @@
 
 function buttonClicked() {
 
-  const integer1 = parseInt(document.getElementById('integer1').value)
+  var integer1 = parseInt(document.getElementById('integer1').value)
   var integer2 = parseInt(document.getElementById('integer2').value)
   var counter = 0
   var answer = 0
@@ -28,12 +28,18 @@ function buttonClicked() {
     while (counter < integer2) {
       answer = answer + integer1
       counter = counter + 1
+    } 
+  } else if (integer2 != 0 && integer1 >= 0) {
+      while (counter < integer1) {
+        answer = answer + integer2
+        counter = counter + 1
     }
-  } else if (integer1 < 0 && integer2 < 0)
+  } else if (integer2 < 0 && integer1 < 0) {
       while (counter > integer2) {
         answer = answer - integer1
-        counter = counter - 1
-      }
+        counter = counter + 1
+    }
+  }
   document.getElementById("output").innerHTML = "Your answer is: " + answer
 }
 
