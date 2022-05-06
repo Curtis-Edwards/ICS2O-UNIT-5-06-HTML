@@ -37,7 +37,7 @@ function buttonClicked() {
   } else if (integer2 < 0 && integer1 < 0) {
       while (counter > integer2) {
         answer = answer - integer1
-        counter = counter + 1
+        counter = counter - 1
     }
   }
   document.getElementById("output").innerHTML = "Your answer is: " + answer
