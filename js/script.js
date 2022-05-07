@@ -24,7 +24,7 @@ function buttonClicked() {
   var counter = 0
   var answer = 0
 // if both numbers are positive
-  if (intger1 > 0 && integer2 > 0) {
+  if (integer1 > 0 && integer2 > 0) {
     while (counter < integer2) {
       answer = answer + integer1
       counter = counter + 1
